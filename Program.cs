@@ -32,7 +32,7 @@
 
     //  return board;
 
-     string[]numbers ={"1", "2", "3", "4", "5"};
+     string[]numbers ={"1", "2", "3", "4", "5", "6", "7", "8"};
      return new List<string>(numbers);
      
      
@@ -123,7 +123,7 @@
         bool tie = true;
         foreach (string number in board)
         {
-            if (number != "x" && number != "o")
+            if (number != "x" || number != "o")
             {
                 tie = false;
             }
